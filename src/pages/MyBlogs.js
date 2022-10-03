@@ -219,7 +219,7 @@ function MyBlogs() {
                       <Typography variant='subtitle2'>
                         {Blog.user.name}
                       </Typography>
-                      nn
+
                       {Blog.user._id === userInfo.id ?
                         <>
                           <SIconButton2 onClick={() => DeleteBlog(Blog._id)}>
