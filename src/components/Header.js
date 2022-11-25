@@ -76,7 +76,7 @@ function Header() {
                                 aria-haspopup="true"
                                 aria-expanded={open ? 'true' : undefined}
                             >
-                                <Tooltip title="Account settings">
+                                <Tooltip>
                                     <SAvatar>
                                         {userInfo.name[0]}
                                     </SAvatar>
