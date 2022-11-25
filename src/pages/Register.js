@@ -14,14 +14,14 @@ const SCard = styled(Card)({
 })
 
 const SButton = styled(Button)({
-  backgroundImage: 'linear-gradient(to right, #F39C12, #F1C40F)',
+  backgroundImage: 'linear-gradient(to right, #D35400, #E67E22)',
   color: '#FFFFFF',
   textTransform: 'none',
   borderRadius: '8px',
   margin: '8px',
   padding: '12px',
   '&:hover': {
-    backgroundImage: 'linear-gradient(to right, #F39C12, #F1C40F)',
+    backgroundImage: 'linear-gradient(to right, #BA4A00, #D35400)',
     color: '#FFFFFF'
   }
 })
@@ -39,7 +39,6 @@ function Register() {
   const Register = (e) => {
     e.preventDefault()
     dispatch(register(name, email, password))
-    console.log(name, email, password);
   }
 
   useEffect(() => {
@@ -53,8 +52,8 @@ function Register() {
       <Toolbar sx={{ mb: 3 }} />
       <SCard>
         <CardContent>
-          <Typography variant='h3' sx={{ color: '#E67E22', fontFamily: 'Staatliches', m: 2 }}>
-            SIGN UP
+          <Typography variant='h4' sx={{ color: '#D35400', m: 2 }}>
+            Sign up
           </Typography>
 
           {loading && <Typography variant='caption'>Loading</Typography>}

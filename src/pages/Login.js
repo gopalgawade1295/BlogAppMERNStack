@@ -14,7 +14,7 @@ const SCard = styled(Card)({
 })
 
 const SButton = styled(Button)({
-    backgroundImage: 'linear-gradient(to right, #F39C12, #F4D03F )',
+    backgroundImage: 'linear-gradient(to right, #D35400, #E67E22)',
     color: '#FFFFFF',
     textTransform: 'none',
     borderRadius: '8px',
@@ -22,7 +22,7 @@ const SButton = styled(Button)({
     marginBottom: '16px',
     padding: '12px',
     '&:hover': {
-        backgroundImage: 'linear-gradient(to right, #F39C12, #F1C40F)',
+        backgroundImage: 'linear-gradient(to right, #BA4A00, #D35400)',
         color: '#FFFFFF'
     }
 })
@@ -52,8 +52,8 @@ function Login() {
             <Toolbar sx={{ mb: 3 }} />
             <SCard>
                 <CardContent>
-                    <Typography variant='h3' sx={{ color: '#E67E22', fontFamily: 'Staatliches', m: 2 }}>
-                        LOG IN
+                    <Typography variant='h4' sx={{ color: '#D35400', m: 2 }}>
+                        Log in
                     </Typography>
 
                     {loading && <Typography variant='caption'>LOADING</Typography>}

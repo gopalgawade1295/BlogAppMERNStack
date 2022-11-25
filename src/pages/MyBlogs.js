@@ -16,34 +16,34 @@ const SCard = styled(Card)({
 })
 
 const SButton1 = styled(Button)({
-  backgroundImage: 'linear-gradient(to right, #F39C12, #F4D03F )',
+  backgroundImage: 'linear-gradient(to right, #D35400, #E67E22)',
   color: '#FFFFFF',
   textTransform: 'none',
   borderRadius: '8px',
   margin: '12px',
   padding: '12px',
   '&:hover': {
-    backgroundImage: 'linear-gradient(to right, #F39C12, #F1C40F)',
+    backgroundImage: 'linear-gradient(to right, #BA4A00, #D35400)',
     color: '#FFFFFF'
   }
 })
 
 const SIconButton1 = styled(IconButton)({
-  background: '#2E86C1',
+  background: '#1B4F72',
   color: '#FFFFFF',
   '&:hover': {
-    backgroundImage: '#FFFFFF',
-    color: '#2E86C1'
+    background: '#FFFFFF',
+    color: '#1B4F72'
   }
 })
 
 const SIconButton2 = styled(IconButton)({
-  background: '#FF0000',
+  background: '#CB4335',
   color: '#FFFFFF',
   marginRight: '8px',
   '&:hover': {
-    backgroundImage: '#FFFFFF',
-    color: '#FF0000'
+    background: '#FFFFFF',
+    color: '#CB4335'
   }
 })
 
@@ -108,7 +108,7 @@ function MyBlogs() {
       {userInfo ?
         <>
           {!showAddBlog &&
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundImage: 'linear-gradient(to right, #FFFFFF, #F4D03F, #F39C12)', p: 2 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundImage: 'linear-gradient(to right, #FFFFFF, #F39C12, #E67E22, #D35400)', p: 2 }}>
               <Box>
                 <SButton1 onClick={() => setShowAddBlog(true)}>
                   Add Blog

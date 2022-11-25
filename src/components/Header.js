@@ -14,17 +14,17 @@ const SLink = styled(Link)({
 })
 
 const SIconButton = styled(IconButton)({
-    background: '#2E86C1',
+    background: '#000000',
     color: '#FFFFFF',
     '&:hover': {
-        backgroundImage: '#2E86C1',
+        backgroundImage: '#000000',
         color: '#FFFFFF'
     }
 })
 
 const SAvatar = styled(Avatar)({
-    bgcolor: '#BDC3C7',
-    border: '5px solid #F4D03F'
+    background: '#1B4F72',
+    border: '5px solid #D35400'
 })
 
 function Header() {
@@ -51,14 +51,14 @@ function Header() {
 
     return (
         <div>
-            <AppBar elevation={0} sx={{ background: '#2E86C1' }}>
+            <AppBar elevation={0} sx={{ background: '#000000' }}>
                 <Toolbar>
                     <SLink to='/'>
                         <Typography variant='h6'>
                             <SIconButton>
-                                <WebIcon fontSize='large' />
+                                <WebIcon />
                             </SIconButton>
-                            BLOG APP
+                            Blog App
                         </Typography>
                     </SLink>
 
