@@ -13,8 +13,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
+          <Route exact path='/https://blog-app-mern-gg.herokuapp.com' element={<Home />} />
+          <Route path='/https://blog-app-mern-gg.herokuapp.com/login' element={<Login />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/myblogs' element={<MyBlogs />} />
         </Routes>
