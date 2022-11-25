@@ -76,11 +76,9 @@ function Header() {
                                 aria-haspopup="true"
                                 aria-expanded={open ? 'true' : undefined}
                             >
-                                <Tooltip>
-                                    <SAvatar>
-                                        {userInfo.name[0]}
-                                    </SAvatar>
-                                </Tooltip>
+                                <SAvatar>
+                                    {userInfo.name[0]}
+                                </SAvatar>
                             </IconButton>
                         </Toolbar> :
                         <Toolbar sx={{ ml: 'auto' }}>
