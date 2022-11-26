@@ -12,7 +12,7 @@ export const login = (email, password) => async (dispatch) => {
                 'Content-type': 'application/json'
             }
         }
-        const { data } = await axios.post('https://blog-app-mern-gg.herokuapp.com/user/login', { 'email': email, 'password': password }, config)
+        const { data } = await axios.post('http://localhost:5000/user/login', { 'email': email, 'password': password }, config)
 
         dispatch({
             type: USER_LOGIN_SUCCESS,
@@ -47,7 +47,7 @@ export const register = (name, email, password) => async (dispatch) => {
                 'Content-type': 'application/json'
             }
         }
-        const { data } = await axios.post('https://blog-app-mern-gg.herokuapp.com/user/register', { 'name': name, 'email': email, 'password': password },
+        const { data } = await axios.post('http://localhost:5000/user/register', { 'name': name, 'email': email, 'password': password },
             config
         )
 
