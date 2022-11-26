@@ -104,11 +104,11 @@ function MyBlogs() {
 
   return (
     <div>
-      <Box textAlign='left' sx={{ backgroundImage: 'linear-gradient(to right, #FFFFFF, #F4D03F, #F39C12)', height: 65 }} />
+      <Box textAlign='left' sx={{ backgroundImage: 'linear-gradient(to right, #F2F4F4, #F39C12, #E67E22, #D35400)', height: 65 }} />
       {userInfo ?
         <>
           {!showAddBlog &&
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundImage: 'linear-gradient(to right, #FFFFFF, #F39C12, #E67E22, #D35400)', p: 2 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundImage: 'linear-gradient(to right, #F2F4F4, #F39C12, #E67E22, #D35400)', p: 2 }}>
               <Box>
                 <SButton1 onClick={() => setShowAddBlog(true)}>
                   Add Blog
